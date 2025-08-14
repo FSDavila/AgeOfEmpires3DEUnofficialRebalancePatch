@@ -14,18 +14,20 @@ The official patches were grinded to a halt, with the game being completely aban
 Communication with the official AoE3:DE team has been unproductive, and it’s unlikely we’ll see support for custom ranked queues that permit mods (like this mod or other balance mods in particular) anytime soon. The game still has an active official ranked ladder, and many players will be reluctant to leave it - but that doesn’t mean the community can’t act.
 The proposal is to create an Unofficial Rebalance Patch, focused on addressing critical issues such as the Ottomans and Baja California, and of course any other unbalanced mechanic or unit - and invite the community, including top-level players, to help with suggestions for even more precise balancing and adoption.
 
-For championships and normal lobby play, this already works if enough top players and most of the community commit to using it. The main challenge is having a parallel ranked system (there is little to no possibility the DE team would comply if we asked for a Custom Ranked Queue feature), which then requires one of these solutions:
+For championships and normal lobby play, this already works if enough top players and most of the community commit to using it. 
+
+## What about Ranked Ladder?
+The main challenge is having a parallel ranked system (there is little to no possibility the DE team would comply if we asked for a Custom Ranked Queue feature), which then requires one of these solutions:
 
 - A custom launcher (similar to W3Champions in Warcraft 3 or the ESOC Patch in AoE3 Legacy). Potentially hijacking the original game’s API calls to point to a custom leaderboard, for games with Data Mods [with this Data Mod in particular] in ranked matches (probably possible through forcing the “Safe for multiplayer” flag for all mods in the game executable) so a leaderboard for a Unofficial Ranked Queue for players using this rebalance mod can actually work properly (both for querying leaderboard/match data to show it in the player UI and to store it to the parallel Ranked Queue server). The same approach is to be used for the actual matchmaking, it is expected to use the elo ratings and metrics retrieved from the parallel leaderboards to do its matchmaking process, all using the original game logic where possible. 
 
 - As a fallback, using the Age3 LAN Server to host matches and record results to an external Ranking Leaderboard maintained by the community (with automated verification of match result via spectator bots joining in all LAN games or even Replay Parsing each replay to determine who won each game and to feed the leaderboard data with elo calculations from this history).
 
-
 If integration with official ranked matches (or even modding the launcher) isn’t possible, we can still create an external ranking system based on Lobby or LAN matches, with as much automation as possible to keep it simple.
 
 The ultimate goal is simple: take control of the competitive meta away from the official team (which actually has none anyway, as they literally don’t exist) and allow the community to experiment with and maintain its own balance, while keeping the game competitive. The patch is still in testing and many if not all of the current changes to Units, Techs, Cards and other assets, could be reverted or remade in different intensity or direction in its future versions, as more testing and community participation and feedback is done.
 
-What this patch does (so far):
+## What this patch does (so far):
 
 - Tones down overperforming units and strategies without gutting civ identity (See full changelog below);
 
@@ -38,7 +40,7 @@ If you have any suggestions about architecture (of the Parallel Ranked Queue sol
 Let’s make AoE3 ours again, like we did in the good old Legacy times.
 — FSDavila Gaming
 
-Changelog (URP v1.0->Newer Versions):
+## Changelog (URP v1.0->Newer Versions):
 
 (Revolution Tech) Baja California:
 Max Population increase: Absolute 200 -> +80 Relative (If player has 40 max pop from TC+Houses, Add +80 for a total 120)
