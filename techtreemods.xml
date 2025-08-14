@@ -1,0 +1,136 @@
+<techtreemods>
+
+  <tech mergeMode="replace" name="DERevolutionMXBajaCalifornia" type="Normal">
+    <dbid>7719</dbid>
+    <displaynameid>112804</displaynameid>
+    <cost resourcetype="Food">350.0000</cost>
+    <cost resourcetype="Wood">350.0000</cost>
+    <cost resourcetype="Gold">350.0000</cost>
+    <researchpoints>10.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\images\icons\techs\revolution.png</icon>
+    <rollovertextid>112805</rollovertextid>
+    <revolutionciv>DERevMXBajaCalifornia</revolutionciv>
+    <flag>CountsTowardEconomicScore</flag>
+    <flag>RevoltTech</flag>
+    <flag>DEAge1Revolution</flag>
+    <prereqs>
+      <techstatus status="Active">Colonialize</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" amount="3.00" subtype="FreeHomeCityUnit" unittype="deFrontierWagon" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="80.00" subtype="PopulationCap" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">Settler</target>
+      </effect>
+      <effect type="CommandRemove" proto="Settler">
+        <target type="ProtoUnit">TownCenter</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deREVFilibuster</target>
+      </effect>
+      <effect type="CommandAdd" proto="deREVFilibuster" page="0" column="1">
+        <target type="ProtoUnit">TownCenter</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deREVFilibuster" relativity="Absolute">
+        <target type="ProtoUnit">Saloon</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deREVFilibuster" relativity="Absolute">
+        <target type="ProtoUnit">FortFrontier</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deREVFilibuster" relativity="Absolute">
+        <target type="ProtoUnit">deSteamer</target>
+      </effect>
+      <effect type="Data" amount="6.00" subtype="BuildLimit" relativity="Absolute">
+        <target type="ProtoUnit">Saloon</target>
+      </effect>
+      <effect type="Data" amount="5.00" subtype="BuildLimit" relativity="Assign">
+        <target type="ProtoUnit">Privateer</target>
+      </effect>
+      <effect type="Data" amount="1.00" tactic="QuakerGunHorseArtillery" subtype="TacticEnable" relativity="Absolute">
+        <target type="ProtoUnit">deQuakerGun</target>
+      </effect>
+      <effect type="Data" amount="1.00" tactic="QuakerGunMortar" subtype="TacticEnable" relativity="Absolute">
+        <target type="ProtoUnit">deQuakerGun</target>
+      </effect>
+      <effect type="Data" amount="1.00" tactic="QuakerGunHeavyCannon" subtype="TacticEnable" relativity="Absolute">
+        <target type="ProtoUnit">deQuakerGun</target>
+      </effect>
+      <effect type="Data" amount="1.00" tactic="QuakerGunFalconet" subtype="InitialTactic" relativity="Assign">
+        <target type="ProtoUnit">deQuakerGun</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="PowerDataOverride" fromprotopower="deAbilityInspiringFlag" toprotopower="deFlagBajaCaliforniaData" relativity="Percent">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="CopyUnitPortraitAndIcon" unittype="deInspiringFlag" relativity="Absolute">
+        <target type="ProtoUnit">deIconREVBajaFlag</target>
+      </effect>
+      <effect type="SetName" proto="deInspiringFlag" culture="none" newname="110179" newrollover="113010" newshortrollover="113011">
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UseRandomNames" randomnametype="2" relativity="Assign">
+        <target type="ProtoUnit">dePadre</target>
+      </effect>
+      <effect type="SetName" proto="dePadre" culture="none" newname="113014" newrollover="113021" newshortrollover="113020">
+      </effect>
+      <effect type="SetName" proto="deGeneral" culture="none" newname="113015">
+      </effect>
+      <effect type="SetName" proto="deGeneral2" culture="none" newname="113015">
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UpdateVisual" unittype="deGeneral" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UpdateVisual" unittype="deGeneral2" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UpdateVisual" unittype="dePadre" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UseRandomNames" randomnametype="2" relativity="Assign">
+        <target type="ProtoUnit">deGeneral2</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="PowerDataOverride" fromprotopower="dePowerDolores" toprotopower="deLibertyCryData" relativity="Percent">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="PowerDataOverride" fromprotopower="dePowerDoloresImproved" toprotopower="deLibertyCryImprovedData" relativity="Percent">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="CopyUnitPortraitAndIcon" unittype="dePadre" relativity="Absolute">
+        <target type="ProtoUnit">deIconREVPadre</target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="CopyUnitPortraitAndIcon" unittype="deGeneral" relativity="Absolute">
+        <target type="ProtoUnit">deIconREVGeneral</target>
+      </effect>
+      <effect type="Data" amount="0.00" subtype="CopyUnitPortraitAndIcon" unittype="deGeneral2" relativity="Absolute">
+        <target type="ProtoUnit">deIconREVGeneral</target>
+      </effect>
+      <effect type="Data" action="Discover" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">deREVFilibuster</target>
+      </effect>
+      <effect type="AddHomeCityCard" tech="DEHCREVFedMXFortuneSoldier" maxcount="1" ageprereq="1" unitcount="0" infiniteinlastage="0">
+      </effect>
+      <effect type="AddHomeCityCard" tech="DEHCREVFedMXTrickleEconomics" maxcount="1" ageprereq="1" unitcount="0" infiniteinlastage="0">
+      </effect>
+      <effect type="AddHomeCityCard" tech="DEHCREVFedMXFilibusterCombat" maxcount="1" ageprereq="1" unitcount="0" infiniteinlastage="0">
+      </effect>
+      <effect type="AddHomeCityCard" tech="DEHCREVFedMXWalkerLand" maxcount="1" ageprereq="1" unitcount="0" infiniteinlastage="0">
+      </effect>
+      <effect type="TechStatus" status="active">DERevolutionAge1</effect>
+      <effect type="TechStatus" status="obtainable">DEReturnMXBajaCalifornia</effect>
+      <effect type="InitiateRevolution" proto="deREVFilibuster" savedeck="True" extdeck="True">
+      </effect>
+    </effects>
+  </tech>
+
+</techtreemods>

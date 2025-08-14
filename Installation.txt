@@ -1,0 +1,7 @@
+Installation instructions:
+
+1. Open your "local" mods directory folder from "C:\Users\User\Games\Age of Empires 3 DE\xxxxxxxxxxxxxxxxx\mods\local" (you can access this directory via the AGE3 UI, in the main menu->Tools->Mods->Open Directory more easily);
+
+2. Drag and drop the Age3Rebal folder extracted from the zip file into the "local" folder;
+
+3. Restart the game to see all changes take effect.
